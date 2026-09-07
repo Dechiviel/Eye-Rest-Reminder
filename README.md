@@ -1,6 +1,6 @@
 # 20-20-20 Eye Rule Reminder
 
-A tiny background service that reminds you to follow the **20-20-20 rule**
+A lightweight background service that reminds you to follow the **20-20-20 rule**
 for eye strain: every 20 minutes, look at something **20 feet** away for
 **20 seconds**.
 
@@ -12,13 +12,13 @@ they work with any notification daemon.
 - `libnotify` (provides `notify-send`)
 - `systemd` (user session)
 - A notification daemon that implements `org.freedesktop.Notifications`
-  (e.g. caelestia shell, dunst, mako, etc.)
+  (e.g. GNOME, KDE, Xfce, etc.)
 
 ## Install
 
 ```bash
-git clone <this-repo-url>
-cd eye-rest-reminder
+git clone https://github.com/Dechiviel/Eye-Rest-Reminder.git
+cd Eye-Rest-Reminder
 chmod +x install.sh
 ./install.sh
 ```
@@ -31,7 +31,7 @@ The script reads a few optional environment variables:
 |------------|------------------------------------------------|------------------------------------------|
 | `INTERVAL` | `1200` (20 minutes, in seconds)                | Time between reminders                   |
 | `LOOK_AWAY`| `20`                                            | How many seconds to look away            |
-| `ICON`     | `$HOME/.icon/20-20-20/shinobu-plush.jpg`        | Icon name from your theme, or image path |
+| `ICON`     | `-your-icon`        | Icon name from your theme, or image path |
 
 ## Uninstall
 
