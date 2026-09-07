@@ -1,0 +1,12 @@
+[Unit]
+Description=20-20-20 eye rule reminder
+After=graphical-session.target
+
+[Service]
+Type=simple
+# Adjust this path to wherever you install the script, e.g. ~/.local/bin/20-20-20.sh
+ExecStart=%h/.local/bin/20-20-20.sh
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
